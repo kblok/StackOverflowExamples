@@ -140,6 +140,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="Demos\DataListDemo.aspx" />
+    <Content Include="Demos\RepeaterDemo.aspx" />
     <Content Include="Demos\ProvidersList.aspx" />
     <Content Include="Demos\RadioOptions.aspx" />
     <Content Include="favicon.ico" />
@@ -226,6 +227,13 @@
     </Compile>
     <Compile Include="Demos\DataListDemo.aspx.designer.cs">
       <DependentUpon>DataListDemo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\RepeaterDemo.aspx.cs">
+      <DependentUpon>RepeaterDemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\RepeaterDemo.aspx.designer.cs">
+      <DependentUpon>RepeaterDemo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Demos\FormViewDemo.aspx.cs">
       <DependentUpon>FormViewDemo.aspx</DependentUpon>
