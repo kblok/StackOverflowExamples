@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26403.7
+VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetDemoProject", "AspNetDemoProject\AspNetDemoProject.csproj", "{3D7745A0-A05E-48DE-AE3E-07A5FBDB89AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcDemoApp", "MvcDemoApp\MvcDemoApp.csproj", "{2212B667-0616-4D5E-ABF9-DD92CD805E9A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +17,15 @@ Global
 		{3D7745A0-A05E-48DE-AE3E-07A5FBDB89AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D7745A0-A05E-48DE-AE3E-07A5FBDB89AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D7745A0-A05E-48DE-AE3E-07A5FBDB89AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2212B667-0616-4D5E-ABF9-DD92CD805E9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2212B667-0616-4D5E-ABF9-DD92CD805E9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2212B667-0616-4D5E-ABF9-DD92CD805E9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2212B667-0616-4D5E-ABF9-DD92CD805E9A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Data.6.0.1304.0\lib\NET45
 	EndGlobalSection
 EndGlobal

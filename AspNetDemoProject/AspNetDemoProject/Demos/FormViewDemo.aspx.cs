@@ -29,5 +29,9 @@ namespace ASPNETDEMOPROJECT
 			fvAssnmtDets.FindControl("DeleteButton").Visible = rgAssnmtList.SelectedDataKey.Value.ToString() == "1";
 		}
 
+		protected void rgAssnmtList_RowCommand(object sender, GridViewCommandEventArgs e)
+		{
+			
+		}
 	}
 }

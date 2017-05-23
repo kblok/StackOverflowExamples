@@ -9,7 +9,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-			<asp:GridView runat="server" ID="rgAssnmtList" AutoGenerateColumns="true" DataKeyNames="Id" OnSelectedIndexChanged="rgAssnmtList_SelectedIndexChanged" AutoGenerateSelectButton="true"></asp:GridView>
+			<asp:GridView runat="server" ID="rgAssnmtList" AutoGenerateColumns="true" DataKeyNames="Id" OnSelectedIndexChanged="rgAssnmtList_SelectedIndexChanged" AutoGenerateSelectButton="true" OnRowCommand="rgAssnmtList_RowCommand"></asp:GridView>
 			<asp:FormView ID="fvAssnmtDets" runat="server" AllowPaging="true">
 				<ItemTemplate>
 					<%# Eval("Text") %>

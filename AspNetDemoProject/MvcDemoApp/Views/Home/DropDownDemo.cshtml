@@ -1,0 +1,10 @@
+﻿@model MvcDemoApp.Models.DropDownDemoModel
+
+@{
+    ViewBag.Title = "DropDownDemo";
+}
+
+<h2>DropDownDemo</h2>
+
+@Html.DisplayFor(model => model.ClassID, "Select")
+@Html.DropDownListFor(model => model.ClassID, new SelectList(Model.GetClassID(), "ClassID", "ClassID"), new { @class = "select2" })
