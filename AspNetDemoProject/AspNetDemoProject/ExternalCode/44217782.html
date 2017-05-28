@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Register Page - Hastane Randevu</title>
+
+	<link href="/content/styles/bootstrap.css" rel="stylesheet" />
+	<link href="/content/styles/Site.css" rel="stylesheet" />
+	<link href="/content/styles/bootstrap-datetimepicker.css" rel="stylesheet" />
+
+	<script src="/Scripts/modernizr-2.6.2.js"></script>
+</head>
+<body>
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/">Login</a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav"></ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="container body-content">
+
+		<h1>Yeni Admin ve Hastane</h1>
+		<form action="/Hastane/New" method="post">
+			<div class="validation-summary-valid" data-valmsg-summary="true">
+				<ul>
+					<li style="display:none"></li>
+				</ul>
+			</div>    <div class="panel panel-default">
+				<div class="panel-heading">Admin Bilgileri</div>
+				<div class="panel-body">
+					<div class="form-group">
+						<label for="KimlikNo">Kimlik No</label>
+						<input class="form-control" data-val="true" data-val-maxlength="The field KimlikNo must be a string or array type with a maximum length of &#39;12&#39;." data-val-maxlength-max="12" data-val-required="The KimlikNo field is required." id="KimlikNo" name="KimlikNo" type="text" value="" />
+					</div>
+
+					<div class="form-group">
+						<label for="Username">Username</label>
+						<input class="form-control" data-val="true" data-val-maxlength="The field Username must be a string or array type with a maximum length of &#39;50&#39;." data-val-maxlength-max="50" data-val-required="The Username field is required." id="Username" name="Username" type="text" value="" />
+					</div>
+
+					<div class="form-group">
+						<label for="Password">Password</label>
+						<input class="form-control" data-val="true" data-val-required="The Password field is required." id="Password" name="Password" type="password" />
+					</div>
+
+					<div class="form-group">
+						<label for="Telefon">Telefon</label>
+						<input class="form-control" data-val="true" data-val-required="The Telefon field is required." id="Telefon" name="Telefon" type="text" value="" />
+					</div>
+
+					<div class="form-group">
+						<label for="Email">Email</label>
+						<input class="form-control" data-val="true" data-val-maxlength="The field Email must be a string or array type with a maximum length of &#39;256&#39;." data-val-maxlength-max="256" data-val-required="The Email field is required." id="Email" name="Email" type="email" value="" />
+					</div>
+
+					<div class="panel panel-default">
+						<div class="panel-heading">Cinsiyet</div>
+						<div class="panel-body">
+							<div class="list-group">
+								<div class="list-group-item" style="margin-left:70px">
+									<input id="Cinsiyetler_0__Id" name="Cinsiyetler[0].Id" type="hidden" value="1" />
+									<label for="Cinsiyetler_0__IsChecked">
+										<input id="Cinsiyetler_0__IsChecked" name="Cinsiyetler[0].IsChecked" type="checkbox" value="true" /><input name="Cinsiyetler[0].IsChecked" type="hidden" value="false" />
+										Erkek
+									</label>
+								</div>
+								<div class="list-group-item" style="margin-left:70px">
+									<input id="Cinsiyetler_1__Id" name="Cinsiyetler[1].Id" type="hidden" value="2" />
+									<label for="Cinsiyetler_1__IsChecked">
+										<input id="Cinsiyetler_1__IsChecked" name="Cinsiyetler[1].IsChecked" type="checkbox" value="true" /><input name="Cinsiyetler[1].IsChecked" type="hidden" value="false" />
+										Kadin
+									</label>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="form-group date" data-date-format="mm/dd/yyyy">
+						<label for="DogumTarihi">Doğum Tarihi</label>
+						<input class="form-control datecontrol" data-val="true" data-val-date="The field DogumTarihi must be a date." data-val-required="The DogumTarihi field is required." id="DT" name="DogumTarihi" type="text" value="01/01/0001 00:00:00" />
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading">Hastane Bilgileri</div>
+				<div class="panel-body">
+					<div class="form-group">
+						<label for="Iller">Il</label>
+						<select class="form-control" data-val="true" data-val-required="The Iller field is required." id="ddlIl" name="Iller">
+							<option value="">--Se&#231;in--</option>
+							<option value="1">Edirne</option>
+							<option value="2">Bursa</option>
+							<option value="3">İstanbul</option>
+							<option value="4">Ankara</option>
+						</select>
+					</div>
+
+					<div class="form-group">
+						<label for="Ilceler">Ilce</label>
+						<select class="form-control" data-val="true" data-val-required="The Ilceler field is required." id="ddlIlce" name="Ilceler">
+							<option value="">--Se&#231;in--</option>
+						</select>
+					</div>
+
+					<div class="form-group">
+						<label for="HastaneAdi">HastaneAdi</label>
+						<input class="form-control" data-val="true" data-val-required="The HastaneAdi field is required." id="HastaneAdi" name="HastaneAdi" type="text" value="" />
+					</div>
+
+
+
+					<input type="submit" value="Kaydet" class="btn btn-primary" />
+					<a>ya da vazgeç</a>
+
+				</div>
+			</div>
+		</form>
+
+
+
+
+		<hr />
+		<footer>
+			<p>&copy; 2017 - Hastanemiz....</p>
+		</footer>
+	</div>
+
+	<script src="/scripts/jquery-1.10.2.js"></script>
+	<script src="/scripts/jquery.validate.js"></script>
+	<script src="/scripts/bootstrap.js"></script>
+	<script src="/scripts/bootstrap-datetimepicker.js"></script>
+	<script src="/scripts/myDatePicker.js"></script>
+
+
+	<script>
+		alert(2);
+        $('#DT').datepicker({ format: 'mm/dd/yyyy', startDate: '-3d' });
+	</script>
+
+
+	<script type="text/javascript">
+
+		$(document).ready(function () {
+			alert(1);
+            $('#ddlIl').change(function () {
+                $.ajax({
+                    type: "post",
+                    url: "/Users/GetIlce",
+                    data: { Id: $('#ddlIl').val() },
+                    datatype: "json",
+                    traditional: true,
+                    success: function (data) {
+                        var ilce = "<select id='ddlIlce'>";
+                        ilce = ilce + '<option value="">--Select--</option>';
+                        for (var i = 0; i < data.length; i++) {
+                            ilce = ilce + '<option value=' + data[i].Value + '>' + data[i].Text + '</option>';
+                        }
+                        district = district + '</select>';
+                        $('#Ilceler').html(ilce);
+                    }
+                });
+            });
+        });
+	</script>
+
+
+	<!-- Visual Studio Browser Link -->
+	<script type="application/json" id="__browserLink_initializationData">
+		{"appName":"Microsoft Edge","requestId":"170d14dffa0d4444907bf086ca9c0c5c"}
+	</script>
+	<script type="text/javascript" src="http://localhost:60203/39e10134efdf4b4eb0cfd336b4240aed/browserLink" async="async"></script>
+	<!-- End Browser Link -->
+
+</body>
+</html>

@@ -189,6 +189,7 @@
     <Content Include="Demos\SignalR.aspx" />
     <Content Include="Demos\UpdatePanel.aspx" />
     <Content Include="ExternalCode\44141788.aspx" />
+    <Content Include="ExternalCode\44217782.html" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Demos\FormViewDemo.aspx" />
