@@ -186,6 +186,7 @@
     <Content Include="Demos\RepeaterDemo.aspx" />
     <Content Include="Demos\ProvidersList.aspx" />
     <Content Include="Demos\RadioOptions.aspx" />
+    <Content Include="Demos\routingDemo.aspx" />
     <Content Include="Demos\SignalR.aspx" />
     <Content Include="Demos\UpdatePanel.aspx" />
     <Content Include="ExternalCode\44141788.aspx" />
@@ -242,6 +243,7 @@
   <ItemGroup>
     <Content Include="App_Code\Startup.cs" />
     <Content Include="App_Code\ChatHub.cs" />
+    <Content Include="App_Code\ErrorModule.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -327,6 +329,13 @@
     </Compile>
     <Compile Include="Demos\RadioOptions.aspx.designer.cs">
       <DependentUpon>RadioOptions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\routingDemo.aspx.cs">
+      <DependentUpon>routingDemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\routingDemo.aspx.designer.cs">
+      <DependentUpon>routingDemo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Demos\SignalR.aspx.cs">
       <DependentUpon>SignalR.aspx</DependentUpon>
