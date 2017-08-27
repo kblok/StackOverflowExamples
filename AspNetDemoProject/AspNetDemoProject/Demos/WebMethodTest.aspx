@@ -10,10 +10,26 @@
     <form id="form1" runat="server">
         <div>
         </div>
-		<script src="Scripts/jquery-1.10.2.min.js"></script>
+		<script src="/Scripts/jquery-3.1.1.min.js"></script>
 		<script type="text/javascript">
 
 			var myVar= "ooooblah";
+			getRCT("test");
+			function getRCT(mez_sis) {
+				$.ajax({
+					url: 'WebMethodTest.aspx/GetTempInfo',
+					method: 'post',
+					contentType: 'application/json',
+					data: '{d_val:\"' + myVar + '\"}',
+					dataType: 'json',
+					success: function (data) {
+						alert(data.d);
+					},
+					error: function (error) {
+						alert(error);
+					}
+				});
+			}
 
 			$.ajax({
 				type: "POST",

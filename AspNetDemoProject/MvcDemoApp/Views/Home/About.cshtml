@@ -5,3 +5,17 @@
 <h3>@ViewBag.Message</h3>
 
 <p>Use this area to provide additional information.</p>
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script>
+	
+	var path = '@Url.Action("DownloadPdf", "Download")';
+	window.open(path, '_blank');
+	/*
+	var ab = "Chocolate Smoothies ya know?";
+	$.ajax({
+		url: "/Download/GenericPostTest",
+		method: "post",
+		data: { a: ab }
+	})
+	*/
+</script>

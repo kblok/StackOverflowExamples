@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="FormViewDemo.aspx.cs" Inherits="ASPNETDEMOPROJECT.FormViewDemo" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="FormViewDemo.aspx.cs" Inherits="ASPNETDEMOPROJECT.FormViewDemo" EnableEventValidation="false" EnableViewState="true" %>
 
 <!DOCTYPE html>
 
@@ -9,7 +9,16 @@
 <body>
     <form id="form1" runat="server">
         <div>
-			<asp:GridView runat="server" ID="rgAssnmtList" AutoGenerateColumns="true" DataKeyNames="Id" OnSelectedIndexChanged="rgAssnmtList_SelectedIndexChanged" AutoGenerateSelectButton="true" OnRowCommand="rgAssnmtList_RowCommand"></asp:GridView>
+			<asp:GridView runat="server" ID="rgAssnmtList" AutoGenerateColumns="false" DataKeyNames="Id" OnSelectedIndexChanged="rgAssnmtList_SelectedIndexChanged" AutoGenerateSelectButton="false" OnRowCommand="rgAssnmtList_RowCommand">
+				<Columns>
+					<asp:TemplateField>
+						<ItemTemplate>
+							<asp:ImageButton ID="bntimgEdit"  runat="server" ImageUrl="./images/Edit.png"  AlternateText="Edit" CommandName="GetData" CommandArgument='<%# Container.DataItemIndex %>' />
+						</ItemTemplate>
+						
+					</asp:TemplateField>
+				</Columns>
+			</asp:GridView>
 			<asp:FormView ID="fvAssnmtDets" runat="server" AllowPaging="true">
 				<ItemTemplate>
 					<%# Eval("Text") %>

@@ -11,11 +11,14 @@ namespace ASPNETDEMOPROJECT
 	{
 		protected void Page_Load(object sender, EventArgs e)
 		{
-			rgAssnmtList.DataSource = new[] {
+			if (!IsPostBack)
+			{
+				rgAssnmtList.DataSource = new[] {
 				new {Id= 1, Text = "Text 1"  },
 				new {Id= 2, Text = "Text 2"  },
 			};
-			rgAssnmtList.DataBind();
+				rgAssnmtList.DataBind();
+			}
 		}
 
 		protected void rgAssnmtList_SelectedIndexChanged(object sender, EventArgs e)

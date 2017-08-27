@@ -7,10 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ASPNETDEMOPROJECT {
+namespace AspNetDemoProject.ExternalCode {
     
     
-    public partial class RepeaterDemo {
+    public partial class P44359543 {
         
         /// <summary>
         /// form1 control.
@@ -22,12 +22,12 @@ namespace ASPNETDEMOPROJECT {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// repeater control.
+        /// USR control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater repeater;
+        protected global::System.Web.UI.WebControls.Label USR;
     }
 }

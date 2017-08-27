@@ -32,5 +32,12 @@ namespace ASPNETDEMOPROJECT
 				ExtraArgsForMagicFunction = new[] { "Some Extra Args" }
 			};
 		}
+
+		[WebMethod]
+		public static string GetTempInfo(string d_val)
+		{
+			string str = d_val;
+			return str;
+		}
 	}
 }

@@ -1,0 +1,15 @@
+﻿{
+	"ID": 28,
+	"Content": [ "{\"NewName\":\"fdsgfd\",\"Type\":\"2\",\"Classes\":\"3\",\"Subjects\":\"Tysk\",\"Creator\":\"andre-hansen1@hotmail.com\",\"isActive\":\"False\",\"CreatedDate\":null,\"LastModifiedDate\":null,\"Editor\":\"\",\"AssignmentContent\":null,\"PointContent\":[{\"Type\":\"text\",\"Text\":\"dfgfgs\",\"Data\":null,\"MultiType\":null,\"MIME\":null,\"FileUrl\":null,\"ID\":0,\"Link\":null,\"Youtube\":null,\"Answers\":null},{\"Type\":\"multi\",\"Text\":\"i know rigth\",\"Data\":null,\"MultiType\":\"mulAns\",\"MIME\":null,\"FileUrl\":null,\"ID\":1,\"Link\":null,\"Youtube\":null,\"Answers\":[{\"Text\":\"dfsd\",\"Correct\":false},{\"Text\":\"sdffe\",\"Correct\":false},{\"Text\":\"werwfds\",\"Correct\":true},{\"Text\":\"werwfsd\",\"Correct\":false}]}]}" ],
+	"Notes": [ "" ],
+	"Type": 2,
+	"Subjects": "Tysk",
+	"Classes": "3",
+	"Name": "fdsgfd",
+	"Assign_Content": [ "[{\"Type\":\"text\",\"Text\":\"dfgfgs\",\"Data\":null,\"MultiType\":null,\"MIME\":null,\"FileUrl\":null,\"ID\":0,\"Link\":null,\"Youtube\":null,\"Answers\":null},{\"Type\":\"multi\",\"Text\":\"i know rigth\",\"Data\":null,\"MultiType\":\"mulAns\",\"MIME\":null,\"FileUrl\":null,\"ID\":1,\"Link\":null,\"Youtube\":null,\"Answers\":[{\"Text\":\"dfsd\",\"Correct\":false},{\"Text\":\"sdffe\",\"Correct\":false},{\"Text\":\"werwfds\",\"Correct\":true},{\"Text\":\"werwfsd\",\"Correct\":false}]}]" ],
+	"Creator": "example@example.com",
+	"isActive": "False",
+	"Editor": "example@example.com",
+	"CreatedDate": "2017-08-22T00:00:00",
+	"LastModifiedDate": "2017-08-22T00:00:00"
+}
