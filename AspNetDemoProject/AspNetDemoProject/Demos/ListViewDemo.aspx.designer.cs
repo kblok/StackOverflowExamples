@@ -7,10 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ASPNETDEMOPROJECT {
+namespace AspNetDemoProject.Demos {
     
     
-    public partial class RepeaterDemo {
+    public partial class ListViewDemo {
         
         /// <summary>
         /// form1 control.
@@ -22,21 +22,21 @@ namespace ASPNETDEMOPROJECT {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// repeater control.
+        /// listView control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater repeater;
+        protected global::System.Web.UI.WebControls.ListView listView;
         
         /// <summary>
-        /// textTextBox control.
+        /// refresh control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox textTextBox;
+        protected global::System.Web.UI.WebControls.LinkButton refresh;
     }
 }

@@ -28,5 +28,11 @@ namespace AspNetDemoProject.Demos
 			listComment.DataSource = list;
 			listComment.DataBind();
 		}
+
+		protected void redirector_Click(object sender, EventArgs e)
+		{
+			ScriptManager.RegisterClientScriptBlock(this, GetType(), "redirect",
+				"location.href = 'ListViewDemo.aspx'; alert('test');", true);
+		}
 	}
 }

@@ -10,7 +10,7 @@
 namespace AspNetDemoProject.Demos {
     
     
-    public partial class UpdatePanel {
+    public partial class AjaxDemoRequestPage {
         
         /// <summary>
         /// form1 control.
@@ -22,48 +22,30 @@ namespace AspNetDemoProject.Demos {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// uptComment control.
+        /// txtCountry control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.UpdatePanel uptComment;
+        protected global::System.Web.UI.WebControls.TextBox txtCountry;
         
         /// <summary>
-        /// redirector control.
+        /// txtTitle control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button redirector;
+        protected global::System.Web.UI.WebControls.TextBox txtTitle;
         
         /// <summary>
-        /// txtComment control.
+        /// btnAjax control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtComment;
-        
-        /// <summary>
-        /// btnSendComment control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSendComment;
-        
-        /// <summary>
-        /// listComment control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ListView listComment;
+        protected global::System.Web.UI.WebControls.Button btnAjax;
     }
 }

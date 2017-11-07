@@ -10,12 +10,13 @@
 	<form id="form1" runat="server">
 		<asp:ScriptManager runat="server"></asp:ScriptManager>
 		<div class="post commentPanel" id="pnlComment">
-			<asp:UpdatePanel runat="server" ID="uptComment" UpdateMode="Always">
+			<asp:UpdatePanel runat="server" ID="uptComment">
 				<ContentTemplate>
+					<asp:Button runat="server" ID="redirector" OnClick="redirector_Click" Text="redirect" />
 					<div class="post-footer">
 						<div class="input-group">
 							<asp:TextBox runat="server" ID="txtComment" CssClass="form-control" placeholder="Add a comment"></asp:TextBox>
-							<asp:Button runat="server" CssClass="btn btn-primary" imgId='<%# Eval("PID") %>' ID="btnSendComment" OnClick="btnSendComment_Click" Text="Send"></asp:Button>
+							<asp:Button runat="server" CssClass="btn btn-primary" ClientIDMode="Static" ID="btnSendComment" OnClick="btnSendComment_Click" Text="Send"></asp:Button>
 						</div>
 						<ul class="comments-list">
 

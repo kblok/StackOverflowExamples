@@ -14,9 +14,9 @@ namespace ASPNETDEMOPROJECT
 			if (!IsPostBack)
 			{
 				rgAssnmtList.DataSource = new[] {
-				new {Id= 1, Text = "Text 1"  },
-				new {Id= 2, Text = "Text 2"  },
-			};
+					new {Id= 1, Text = "Text 1"  },
+					new {Id= 2, Text = "Text 2"  },
+				};
 				rgAssnmtList.DataBind();
 			}
 		}

@@ -12,6 +12,14 @@
         </div>
 		<script src="/Scripts/jquery-3.1.1.min.js"></script>
 		<script type="text/javascript">
+			
+$.ajax({
+	type: "POST",
+	url: "WebMethodTest.aspx/Save",
+	data: JSON.stringify({ "id": 2, "wasChecked": "test" }),
+	contentType: "application/json; charset=utf-8",
+	dataType: "json"
+});
 
 			var myVar= "ooooblah";
 			getRCT("test");

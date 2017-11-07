@@ -20,12 +20,16 @@
 						<asp:ListItem CssClass="text-center" Text="Pending" Value="2 "></asp:ListItem>
 					</asp:DropDownList>
 					<asp:TextBox runat="server" ID="txtB" data-amount="" Text='<%# Eval("Id") %>'></asp:TextBox>
+					<asp:TextBox ID="PortionName" runat="server" Width ="340px" Text=''></asp:TextBox>
+                     <asp:CheckBox ID="Name" runat="server" CommandName="CopyText" AutoPostBack="true" />
+					<br />
 				</ItemTemplate>
 				<FooterTemplate>
 					<asp:Label data-billed="" runat="server" ID="billed"></asp:Label>
 				</FooterTemplate>
 			</asp:Repeater>
-
+			<br />
+			<asp:TextBox runat="server" ID="textTextBox"></asp:TextBox>
 			<script src="/Scripts/jquery-3.1.1.min.js"></script>
 			<script type="text/javascript">
 var amount = 0;

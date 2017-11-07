@@ -7,6 +7,7 @@ using System.Web.Services;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
+
 namespace ASPNETDEMOPROJECT
 {
 	public partial class WebMethodTest : System.Web.UI.Page
@@ -38,6 +39,14 @@ namespace ASPNETDEMOPROJECT
 		{
 			string str = d_val;
 			return str;
+		}
+
+		
+		[WebMethod(true)]
+		[ScriptMethod(ResponseFormat = ResponseFormat.Json)]
+		public static string Save(string id, string wasChecked)
+		{
+			return null;
 		}
 	}
 }

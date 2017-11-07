@@ -18,9 +18,10 @@ namespace ASPNETDEMOPROJECT
 					new {Id= 1, Text = "Text 1"  },
 					new {Id= 2, Text = "Text 2"  },
 				};
-			}
-			repeater.DataBind();
 
+				repeater.DataBind();
+			}
+			
 		}
 
 		protected void repeater_ItemCommand(object source, RepeaterCommandEventArgs e)
@@ -29,7 +30,16 @@ namespace ASPNETDEMOPROJECT
 			{
 				Response.Write($"Do something with {e.CommandArgument}");
 			}
+			if(e.CommandName == "CopyText")
+			{
+				var checkbox = e.Item.FindControl("Name") as CheckBox;
+				var portionName = e.Item.FindControl("PortionName") as TextBox;
 
+				if (checkbox.Checked)
+				{
+					textTextBox.Text = portionName.Text;
+				}
+			}
 		}
 
 		protected void repeater_ItemCreated(object sender, RepeaterItemEventArgs e)

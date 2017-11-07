@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -53,10 +54,16 @@ namespace GenericConsoleTestApp
 			Console.WriteLine(Regex.Replace(query, pattern, string.Empty));
 			*/
 
-			
+			/*
 			RootObject movie2 = JsonConvert.DeserializeObject<RootObject>("{\"ID\":123,\"Content\":[\"{\"NewName\":\"fdsgfd\",\"Type\":\"2\"}\"],\"Notes\":[\"\"],\"Type\":2,\"Subjects\":\"Tysk\",\"Classes\":\"3\",\"Name\":\"fdsgfd\",\"Assign_Content\":[\"[{\"Type\":\"text\",\"Text\":\"dfgfgs\"}]\"],\"Creator\":\"example@example.com\",\"isActive\":\"False\",\"Editor\":\"example@example.com\",\"CreatedDate\":\"2017-08-22T00:00:00\",\"LastModifiedDate\":\"2017-08-22T00:00:00\"}");
-			
-
+			*/
+			var str = "{'messages': [{'thread_ID': 1},{'thread_ID': 2}]}";
+			var jObj = Newtonsoft.Json.Linq.JObject.Parse(str);
+			var jArr = new JArray(jObj["messages"]);
+			foreach(var message in jArr.Values())
+			{
+				Console.WriteLine(message.SelectToken("thread_ID"));
+			}
 		}
 	}
 
