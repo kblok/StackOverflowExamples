@@ -71,3 +71,4 @@ C:\source\personal\StackOverflowDemos\AspNetDemoProject\MvcDemoApp\bin\Microsoft
 C:\source\personal\StackOverflowDemos\AspNetDemoProject\MvcDemoApp\obj\Debug\MvcDemoApp.csprojResolveAssemblyReference.cache
 C:\source\personal\StackOverflowDemos\AspNetDemoProject\MvcDemoApp\obj\Debug\MvcDemoApp.dll
 C:\source\personal\StackOverflowDemos\AspNetDemoProject\MvcDemoApp\obj\Debug\MvcDemoApp.pdb
+C:\source\personal\StackOverflowDemos\AspNetDemoProject\MvcDemoApp\obj\Debug\MvcDemoApp.csproj.CoreCompileInputs.cache

@@ -10,7 +10,7 @@
 namespace AspNetDemoProject.Demos {
     
     
-    public partial class DynamicGridView {
+    public partial class ListViewNull {
         
         /// <summary>
         /// form1 control.
@@ -22,21 +22,21 @@ namespace AspNetDemoProject.Demos {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// GridView1 control.
+        /// listView control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.WebControls.ListView listView;
         
         /// <summary>
-        /// lnkEdit control.
+        /// refresh control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton lnkEdit;
+        protected global::System.Web.UI.WebControls.LinkButton refresh;
     }
 }

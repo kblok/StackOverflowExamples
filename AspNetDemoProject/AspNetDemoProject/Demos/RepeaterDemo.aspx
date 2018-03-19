@@ -11,6 +11,7 @@
 		<div>
 			<asp:Repeater ID="repeater" runat="server" OnItemCommand="repeater_ItemCommand" OnItemCreated="repeater_ItemCreated" OnItemDataBound="repeater_ItemDataBound">
 				<ItemTemplate>
+					<div data-text='data-<%# Eval("Text") %>' data-text2='<%# "data-" + Eval("Text") %>'></div>
 					<%# Eval("Text") %>
 					<asp:Image runat="server" ID="brandImage" />
 					<asp:LinkButton runat="server" ID="DeleteButton" Text="Text" CommandName="Delete" CommandArgument='<%# Eval("Id") %>'></asp:LinkButton>

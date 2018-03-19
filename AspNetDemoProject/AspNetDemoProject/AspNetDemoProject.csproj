@@ -188,6 +188,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
+    <Content Include="Demos\ControlCreation.aspx" />
     <Content Include="Demos\DatabaseProcTest.aspx" />
     <Content Include="Demos\DataDash.aspx" />
     <Content Include="Demos\DataListDemo.aspx" />
@@ -195,10 +196,15 @@
     <Content Include="Demos\FindControl.aspx" />
     <Content Include="Demos\FormSubmit.html" />
     <Content Include="Demos\InnerHtmlTest.aspx" />
+    <Content Include="Demos\ListViewNull.aspx" />
     <Content Include="Demos\ListViewDemo.aspx" />
+    <Content Include="Demos\MasterNoContent.aspx" />
+    <Content Include="Demos\MasterWithContent.aspx" />
+    <Content Include="Demos\NumberInput.aspx" />
     <Content Include="Demos\PostbackTest.aspx" />
     <Content Include="Demos\PostTarget.aspx" />
     <Content Include="Demos\PushStateDemo.aspx" />
+    <Content Include="Demos\RegExpValidation.aspx" />
     <Content Include="Demos\RegisterClientScriptBlock.aspx" />
     <Content Include="Demos\RepeaterDemo.aspx" />
     <Content Include="Demos\ProvidersList.aspx" />
@@ -312,6 +318,13 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Demos\ControlCreation.aspx.cs">
+      <DependentUpon>ControlCreation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\ControlCreation.aspx.designer.cs">
+      <DependentUpon>ControlCreation.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Demos\DatabaseProcTest.aspx.cs">
       <DependentUpon>DatabaseProcTest.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -361,12 +374,40 @@
     <Compile Include="Demos\InnerHtmlTest.aspx.designer.cs">
       <DependentUpon>InnerHtmlTest.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Demos\ListViewNull.aspx.cs">
+      <DependentUpon>ListViewNull.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\ListViewNull.aspx.designer.cs">
+      <DependentUpon>ListViewNull.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Demos\ListViewDemo.aspx.cs">
       <DependentUpon>ListViewDemo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Demos\ListViewDemo.aspx.designer.cs">
       <DependentUpon>ListViewDemo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MasterNoContent.aspx.cs">
+      <DependentUpon>MasterNoContent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MasterNoContent.aspx.designer.cs">
+      <DependentUpon>MasterNoContent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\MasterWithContent.aspx.cs">
+      <DependentUpon>MasterWithContent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\MasterWithContent.aspx.designer.cs">
+      <DependentUpon>MasterWithContent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\NumberInput.aspx.cs">
+      <DependentUpon>NumberInput.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\NumberInput.aspx.designer.cs">
+      <DependentUpon>NumberInput.aspx</DependentUpon>
     </Compile>
     <Compile Include="Demos\PostbackTest.aspx.cs">
       <DependentUpon>PostbackTest.aspx</DependentUpon>
@@ -388,6 +429,13 @@
     </Compile>
     <Compile Include="Demos\PushStateDemo.aspx.designer.cs">
       <DependentUpon>PushStateDemo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\RegExpValidation.aspx.cs">
+      <DependentUpon>RegExpValidation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\RegExpValidation.aspx.designer.cs">
+      <DependentUpon>RegExpValidation.aspx</DependentUpon>
     </Compile>
     <Compile Include="Demos\RegisterClientScriptBlock.aspx.cs">
       <DependentUpon>RegisterClientScriptBlock.aspx</DependentUpon>

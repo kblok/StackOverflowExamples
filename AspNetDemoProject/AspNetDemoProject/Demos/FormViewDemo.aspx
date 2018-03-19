@@ -14,8 +14,8 @@
 					<asp:TemplateField>
 						<ItemTemplate>
 							<asp:ImageButton ID="bntimgEdit"  runat="server" ImageUrl="./images/Edit.png"  AlternateText="Edit" CommandName="GetData" CommandArgument='<%# Container.DataItemIndex %>' />
+							<asp:button runat="server" id="testButton" onclientclick='<%# String.Concat("if(!MyFunc(\"", Eval("Text"), "\")) return false;") %>' />
 						</ItemTemplate>
-						
 					</asp:TemplateField>
 				</Columns>
 			</asp:GridView>

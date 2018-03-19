@@ -41,7 +41,17 @@ namespace ASPNETDEMOPROJECT
 			return str;
 		}
 
-		
+		[WebMethod]
+		public static List<ListItem> GetList()
+		{
+			var data = new List<ListItem>();
+			data.Add(new ListItem("Foo", "Var"));
+			data.Add(new ListItem("Foo2", "Var2"));
+			return data;
+		}
+
+
+
 		[WebMethod(true)]
 		[ScriptMethod(ResponseFormat = ResponseFormat.Json)]
 		public static string Save(string id, string wasChecked)

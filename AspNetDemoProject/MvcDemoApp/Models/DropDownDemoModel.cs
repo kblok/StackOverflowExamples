@@ -8,6 +8,7 @@ namespace MvcDemoApp.Models
 	public class DropDownDemoModel
 	{
 		public int ClassID { get; set; }
+		public string CategoryID { get; set; }
 
 		public dynamic[] GetClassID()
 		{

@@ -10,8 +10,10 @@
     <form id="form1" runat="server">
         <div>
         </div>
+		<table class="tblData"></table>
 		<script src="/Scripts/jquery-3.1.1.min.js"></script>
 		<script type="text/javascript">
+
 			
 $.ajax({
 	type: "POST",
@@ -48,6 +50,15 @@ $.ajax({
 				success: onSuccess
 			});
 
+			$.ajax({
+				type: "POST",
+				url: "WebMethodTest.aspx/GetList",
+				contentType: "application/json; charset=utf-8",
+				dataType: "json",
+				success: onSuccessList
+			});
+
+
 			function onSuccess(data) {
 				alert(data.d.MainResponse);
 
@@ -55,6 +66,13 @@ $.ajax({
 					magicFunction(data.d.ExtraArgsForMagicFunction)
 				}
 			}
+
+function onSuccessList(data) {
+	$.map(data.d, function (listitem) {
+		$('<tr> <td>' + listitem.Text + '</td> <td>' + listitem.Value + ' </td> </tr>').appendTo(".tblData");
+	});
+}
+
 
 			function magicFunction(args) {
 				alert(args[0]);

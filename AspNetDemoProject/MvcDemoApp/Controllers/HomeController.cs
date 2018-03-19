@@ -30,6 +30,19 @@ namespace MvcDemoApp.Controllers
 
 		public ActionResult DropDownDemo()
 		{
+			var list = new List<dynamic>()
+			{
+				new { Title = "Title 1", Id = "Id 1" },
+				new { Title = "Title 2", Id = "Id 2" }
+			};
+
+			ViewBag.CategoryList =
+				from item in list
+				select new SelectListItem
+				{
+					Text = item.Title + " FooBar",
+					Value = item.Id
+				};
 
 			return View(new DropDownDemoModel());
 		}

@@ -10,5 +10,20 @@ namespace Test.Server
 		{
 			Clients.All.addMessage(message);
 		}
+
+		public void AddItem(string item)
+		{
+			Clients.All.ItemListUpdated(GetItems(item));
+		}
+
+
+		public string[] GetItems(string item)
+		{
+			return new[]{
+				"foo",
+				"bar",
+				item
+			};
+		}
 	}
 }
